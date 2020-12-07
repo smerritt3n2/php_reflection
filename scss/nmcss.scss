@@ -1,0 +1,44 @@
+/*=============================================================================*/
+/* Global Elements, Providing Style to all Area's of Website
+/*=============================================================================*/
+
+/* Sets Web-page to maximum Width + Height of Window screen */
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* Sets main colour to #ffffff + Coverts all text-font to "Roboto" */
+* {
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Sets margin in body to 0, So that no random margin elements are added */
+body {
+    margin:0;
+}
+
+/* Creating a Value that will set Text elements to correct size */
+small {
+    font-size:10.5px;
+}
+
+/* Applies a Style to all Buttons to create a soft edge + makes cursor change to pointer */
+button {
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+  @import "variables"; /* Gathers variables from Partial */
+  @import "header"; /* Gathers Settings from Partial */
+  @import "sidebar"; /* Gathers Settings from Partial */
+  @import "navbar"; /* Gathers Settings from Partial */
+  @import "slideShow"; /* Gathers Settings from Partial */
+  @import "gallary"; /* Gathers Settings from Partial */
+  @import "banner"; /* Gathers Settings from Partial */
+  @import "latestArea"; /* Gathers Settings from Partial */
+  @import "client"; /* Gathers Settings from Partial */
+  @import "footer"; /* Gathers Settings from Partial */
+  @import "subClient"; /* Gathers Settings from Partial */
+  @import "media"; /* Gathers Adjustments from Partial */

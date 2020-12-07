@@ -1,0 +1,40 @@
+  /*=============================================================================*/
+  /* Footer Area
+  /*=============================================================================*/
+
+  .footer-container { /* Holds together all Footer Elements + */
+    display: flex;
+    flex-direction: row;
+    background-color: #333544;
+    justify-content: space-around;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .col-1, .col-2, .col-3, .col-4 { /* Creates a Style to Hyperlink & List Elements */
+    a { /* Removes Underlines from Text Element */
+        text-decoration: none;
+        &:hover {text-decoration: underline;} /* Hover Event: Underline Text Element */
+      }
+    li {list-style-type: none;}
+    ul {padding: 0;font-size: 15px;}
+  }
+
+  .col-4 button { /* Applies Style to Button Elements in Col-4 Containers */
+    width: 145px;
+    height: 65px;
+    margin: 10px 10px 10px 0;
+    background-color: #252731;
+  }
+
+  .col-4 { /* Creates a Container that Will use a Certain amount of Space */
+      max-width: 320px;
+      i {font-size: xx-large;}
+  }
+
+  /* Creates a Colour Class for Social Buttons to use */
+  .facebook:hover {background-color: var(--facebook-color);background-color:#3b5998;}
+  .twitter:hover {background-color: var(--twitter-color);background-color:#00acee;}
+  .in:hover {background-color: var(--in-color);background-color:#0e76a8;}
+  /*=============================================================================*/
+  /*=============================================================================*/

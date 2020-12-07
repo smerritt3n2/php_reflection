@@ -1,0 +1,49 @@
+  /*=============================================================================*/
+  /* Banner Area
+  /*=============================================================================*/
+
+  .banner-container { /* Holds together all Banner Elements */
+    display:flex;
+    height: auto;
+    background: url(../img/banner.png) no-repeat center / cover;
+    background-color:var(--banner-background);
+    background-color:#333544;
+    .content-container2 { /* Holds together all Content inside Banner Elements */
+      font-size: medium;
+      width:40%;
+      button { /* Creates a Style to Button */
+          color:#000000;
+          background-color:var(--white-color);
+          background-color:#fff;
+          width: 30%;
+          margin: 5% 0px;
+          &:hover{ /* Hover Event: Changes Button Colour */
+              background-color:var(--banner-btn);
+              background-color:#dcdcdc;
+          }
+      }
+      i {
+          color:var(--black-color);
+          color:#000;
+      }
+    }
+}
+
+.content-container2 { /* Holds together all Content Elements in a Column */
+  margin: 0 0 0 7em;
+  align-self: center;  
+  bottom: 10em;
+  button { /* Creates a Style to Button */
+      width: 200px; 
+      height: 50px;
+      font-size: 15px;
+      margin-top: 25px;
+      code {
+          color:#926fb1;
+      }
+  }
+  i {margin-left: 18px;}
+  h1, p {margin: 10px 0px;}
+}
+/*=============================================================================*/
+/*=============================================================================*/

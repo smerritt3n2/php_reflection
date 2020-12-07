@@ -1,0 +1,43 @@
+/*===============================================================================*/
+/* Contact Us Area
+/*===============================================================================*/
+.formCub {display:flex;flex-direction: column;margin:1em;}
+.formRow {display: flex;}
+.formRow .formCub input {width:25.6em;}
+#agree {width: 6em;height:1.5em;}
+#submit{width: 10em;height: 3em;margin-top: 2em;background-color:#333645;color:#fff !important;border-radius: 8px;font-size: 16px;}
+.contactSettings {display: flex;flex-direction: row;width: 65em;margin: auto;}
+.contactSettings a {color:#926fb1 !important; text-decoration: none;}
+.contactSettings a:hover {color:#926fb1 !important; text-decoration: underline;}
+.contactSettings strong {color:#000 !important;}
+.contactSettings p {color:#000 !important;}
+.contactSettings h1 {color:#000 !important;}
+.contactSettings .formCub h1 {color:#000 !important;}
+.contactSettings .formCub strong {color:#000 !important;}
+.contactSettings .formCub u {color:#000 !important;}
+.contactSettings .formCub p {color:#000 !important;}
+.contactSettings .formCub label {color:#000 !important;}
+.contactSettings .formCub input {color:#000 !important;}
+
+.moreDetails {display:block;padding-top:5em;}
+.moreDetails i {color:#000;margin-left: 8px;}
+
+or{color:#FFA500;}
+
+/*===============================================================================*/
+/*===============================================================================*/
+
+/*===============================================================================*/
+/* Settings/ Style for "Map Section"
+/*===============================================================================*/
+
+.leaflet-popup-content {color: #000;}
+
+.map-container {width:40em;margin: 15px 15px;padding-top: 30px;text-align: center;box-shadow: 0px 0px 43px -1px #00000066;border-radius: 3px;border-style: groove;border-width: 2px;}
+.map-container i {background-color:#333645;font-size: 2em;}
+
+#map  {width:auto;height:400px;}
+#map2 {width:auto;height:400px;}
+
+
+/*===============================================================================*/

@@ -1,0 +1,82 @@
+  /*=============================================================================*/
+  /* Client Area
+  /*=============================================================================*/
+
+  .client-container { /* Holds together all Client Elements + */
+    display: flex; /* Applies a Two Staged Colour Background (Top to Bottom) */
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: linear-gradient(180deg, #d0cece 0%, #ffffff 34%);
+    max-height: 500px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .busseys { /* Applies Images to Container background */
+    width: 188px;height: 70px;
+    background: url(../img/clients/busseys_original.png) no-repeat;
+  }
+  .crane {
+    width: 287px;height: 70px;
+    background: url(../img/clients/crane_original.png) no-repeat;
+  }
+  .beat {
+    width: 72px;height:70px;
+    background: url(../img/clients/beat_original.png) no-repeat;
+  }
+  .northern {
+    width: 322px;height:70px;
+    background: url(../img/clients/northern_original.png) no-repeat;
+  }
+
+  /* Hover Event: Changes Background Image to New Image */
+ .busseys:hover {background: url("../img/clients/busseys_new.png") no-repeat;}
+ .crane:hover {background: url("../img/clients/crane_new.png") no-repeat;}
+ .beat:hover {background: url("../img/clients/beat_new.png") no-repeat;}
+ .northern:hover {background: url("../img/clients/northern_new.png") no-repeat;}
+
+ .tooltip { /* Creates a Container + Spaces Elements Inside Evenly */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    span {
+        width: 220px;
+    }
+  }
+
+  .miniTooltip {
+    left: -5.5em;
+  }
+  
+  .tooltip .tooltiptext { /* Hides Container that Holds Text Content */
+    visibility: hidden;
+    background-color: #333544;
+    color: var(--white-color);
+    text-align: center;
+    padding: 4%;
+    position: absolute; /* Position the Container Above Element */
+    z-index: 1;
+    bottom: 100%;
+    font-size: small;
+    hr {
+        border: 2px solid var(--white-color);
+        width: 30px;
+    }
+  }
+
+  .tooltip .tooltiptext::after { /* Creates the Triangle Point in the Container + */
+    content: ""; /* Points the Triangle Down */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext { /* Hover Event: Reveal Hidden Container */
+    visibility: visible;
+  }
+  /*=============================================================================*/
+  /*=============================================================================*/

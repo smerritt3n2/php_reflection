@@ -1,0 +1,31 @@
+/*=============================================================================*/
+/* Sidebar Area
+/*=============================================================================*/
+
+.zeynep { /* Changing Styles pre-made so that they don't affect the Website */ 
+    background-color: #333544;
+    color: #fff;
+    ul {
+        padding-left: 0;
+        margin-top: 0;
+    }
+}
+
+.zeynep ul > li:not(:last-child) a {
+    border-top: 1px solid #ffffff1a;
+    border-bottom: 1px solid #00000040;
+    letter-spacing: 0.5px;
+}
+
+.sub-side {
+    background-color: #262733;
+    &:hover {
+        background-color: #efefef;
+        border-radius: 3px;
+    }
+}
+
+.pushLeft {
+    position: relative;
+    left: -295px;
+}

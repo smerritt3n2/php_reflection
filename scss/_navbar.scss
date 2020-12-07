@@ -1,0 +1,100 @@
+/*=============================================================================*/
+/* Navbar Area
+/*=============================================================================*/
+
+nav { /* Holds together all Navigational Bar elements */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: 7em;
+        ul{
+            padding: 0;
+            list-style: none;
+            background:var(--nav-background);
+            background: #333544; /* A Fallback Program if the variable Function doesn't work */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        ul li{
+            display: inline-block;
+            line-height: 21px;
+            width: 12em;
+            border-left: 1px solid var(--nav-border-left);
+            border-right: 1px solid var(--nav-border-right);
+        }
+        ul li a{
+            display: flex;
+            flex-direction: column;
+            padding: 20px 37px;
+            text-decoration: none;
+        }
+        ul li ul.dropdown{
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 14.3em;
+            width: 100%;
+        }
+        ul li:hover ul.dropdown{
+            display: flex;	/* Display the dropdown */
+            width: 100%;
+        }
+        .dropdown-size{
+            font-size: 14px;
+            li {
+                width: 22.8em;
+                height: 3.5em;
+                display: inline-flex;
+                justify-content: center;
+                border:none;
+            }
+            a{
+                padding: 0;
+                margin-top:auto;
+                margin-bottom: auto;
+            }
+        }
+        .dropdown-size li:before { /* Before Dropdowns are Generated, In Container create the symbol - */
+            content: "-";
+            margin-right: 1em;
+            margin-top:auto;
+            margin-bottom: auto;
+    }
+
+} 
+
+.code { /* Gives Icons a Colour and Changes there Colour on Hover Events, by calling the variable element */
+    i {color: var(--purple-color); color: #926fb1;}
+    &:hover{i {color:var( --white-color); color: #fff;}background-color:var(--purple-color);background-color:#926fb1;}
+    & ul li {background-color: var(--purple-hover);background-color:#79539a;} /* Applies Colour to Drop down elements */
+}
+
+.desktop {i {color: var(--blue-color);color:#427fd3}
+    &:hover{i {color:var(--white-color);color: #fff;}background-color:var(--blue-color);background-color: #427fd3;}
+    & ul li {background-color: var(--blue-hover);background-color:#286abd;}
+}
+
+.phone {i {color: var(--red-color);transform: rotate(-45deg);color:#DF4A45;}
+    &:hover{i {color:var(--white-color);color:#fff;}background-color:var(--red-color);background-color:#DF4A45;}
+    & ul li {background-color: var(--red-hover);background-color:#de093f;}
+}
+
+.keypad {i {color: var(--grey-color);color:#667F9D;}
+    &:hover{i {color:#ffffff;}background-color:var(--grey-color);background-color:#667F9D;}
+    & ul li {background-color: var(--grey-hover);background-color:#526781;}
+}
+
+.signal {i {color: var(--green-color);color:#00CD76;}
+    &:hover{i {color:var(--white-color);}background-color:var(--green-color);background-color:#00CD76;}
+    & ul li {background-color: var(--green-hover);background-color:#25a25a;}
+}
+
+.shield {i {color:var(--darkred-color);color:#FF2E5B;}
+    &:hover{i {color:var(--white-color);}background-color:var(--darkred-color);background-color:#FF2E5B;}
+    & ul li {background-color:var(--darkred-hover);background-color:#de093f;}
+}
+  /*=============================================================================*/
+  /*=============================================================================*/

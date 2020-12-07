@@ -1,0 +1,227 @@
+  /* Applies New Setting, Styles and Positions to Windows that are at 1440 Resolution */
+  @media screen and (max-width: 1440px) {
+    .dropdown-content { /* Adjusts Dropdown Position */
+        z-index: 1000;
+    } 
+  }
+
+  /* Applies New Setting, Styles and Positions to Windows that are at 1024 Resolution */
+  @media screen and (max-width: 1024px) {
+    input {display: none;} /* Hides Text-Field */
+    .dropdown-content { /* Adjusts Dropdown Position + Changes Font-Size in Dropdown */
+        font-size: 9px;
+        top: 22%;
+    }
+    .subject-container {
+        button { /* Adjusts Button Style */
+         height: 47px;
+         width: 130px;
+        }
+    }
+    .row1 {font-size: small;} /* Changes Font Sizes */
+    .row2 {
+        flex-wrap: wrap;
+        .sb-container { /* Adjusts Width of Containers in Gallary */
+            max-width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: small;
+        }
+    }
+    .banner-container {
+        .content-container2 { /* Adjust Font Sizes + Button Sizes */
+            font-size: larger;
+            width: 90%;
+            button {
+                width: 18%;
+                font-size: large;
+            }
+        }
+    }
+    .last-news {display: none;} /* Hides Last Latest entry */
+    .latest-content {width: 42%;} /* Adjusts width of Container */
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: end;
+        .col-1, .col-2, .col-3, .col-4 { /* Changes width inside Container */
+            width: 400px;
+            margin: 0px 45px;
+        }
+        .col-4 {
+            button { /* Changes Button Style */
+                height: 40px;
+                i {font-size: large;}
+            }
+        }
+    }
+   }
+
+  /* Applies New Setting, Styles and Positions to Windows that are at 985 Resolution */
+  @media screen and (max-width: 768px) {
+        .btn-menu{width:4em}
+        input {display: block;} /* Reveals Text Field */
+        nav {display: none;} /* Hides Navigation bar with Dropdowns */
+        .h-container {
+            .r-container {
+                justify-content: none;
+                form { /* Completes border on Text Field */
+                    margin: 0px;
+                    border-left: solid;
+                    height: 3em;
+                }
+            }
+        }
+       .btn-support {display: none;} /* Hides Support Button */
+       .btn-contact {display: none;} /* Hides Contact Button */
+       .content-container { /* Centers Elements within Container */
+           margin: auto;
+           text-align: center;
+           button {
+               margin: 0px auto;
+           }
+       }
+       .subject-container { /* Adjusts Elements to a Single Column in Gallary */
+           margin: 0px auto;
+           button {width: none; padding: 0px 1em;}
+           .row1 {display: block;}
+       }
+       .banner-container { /* Removes Images inside the Container */
+           background-image: none;
+        .content-container2 { /* Adjusts Content + Buttons inside Container */
+            font-size: larger;
+            width: 90%;
+            text-align: left;
+            button {
+                width: 24%;
+                margin: 0px;
+                margin-bottom: 20px;
+                }
+            }
+        }
+        .footer-container { /* Adjusts Container, Col-4 + Button inside Footer elements */
+            .col-1, .col-2, .col-3, .col-4 {
+                width: auto;
+            }
+            .col-4 { /* Changes width/ height of buttons in Column 4 */
+                button {
+                    height: 4em;
+                    width: 10em;
+                    i {font-size: 2em;}
+                }
+            }
+        }
+        .client-container {
+            .busseys, .crane, .northern { /* Lowers Size of Images + Centers them */
+                background-size: 140px;
+                background-position: center;
+                margin: 10px;
+            }
+        }
+        .client-container { /* Lowers Size of Image + Centers them */
+            .beat {
+                background-size: 55px;
+                background-position: center;
+                margin: 10px;
+            }
+        }
+    }
+
+  /* Applies New Setting, Styles and Positions to Windows that are at 425 Resolution */  
+  @media screen and (max-width: 425px) {
+    .h-container{img{width:14em;margin: 0.65em auto;}}
+    .last-news {display: flex;}  /* Converts Latest Columns into 1 Column */
+    .client-container {display: none;} /* Hides Client Logos */
+    .btn-search { /* Apply Style to Search Button */
+        position: absolute;
+        margin-left: 88%;
+        margin-top: 1%;
+        max-width: 10%;
+        height: 5%;
+        i {
+            color: #000;
+        }
+    }
+    .r-container {  /* Changes the position of the Elements in Column to Reverse */
+        align-items: flex-end;
+        flex-direction: column-reverse;
+        .btn-menu { /* Aligns Menu Icon into the text Field */
+            margin-left: auto;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 14%;
+            height: 55px;
+        }
+        form {.btn-search {background-color: #E5E5E5;} }
+    }
+    header {
+        img { /* Applies Style to Images */
+            position: absolute;
+            width: 60%;
+            padding: 10px;
+        }
+    }
+    input { /* Allows the Text Field to expand further than its container */
+        display: block;
+        box-sizing: border-box;
+        width: 425px;
+        height: 50px;
+        padding: 10px;
+        font-size: medium;
+        background-color: #E5E5E5;
+        border: groove;
+    }
+    .row2 { /* Applies Style to Container */
+        display: block;
+        .sb-container {
+            max-width: 77%;
+        }
+    }
+    .banner-container { /* Applies Style to button */
+        .content-container2 {
+            button {width: 42%;}
+        }
+    }
+    .latest-container{ /* Changes Container in Latest's from 2 Column to 1 */
+        flex-direction: column;
+        .latest-content {
+            width: 90%;
+            margin: 1em auto;
+        }
+    }
+    .footer-container { /* Applies Style to Footer Container */
+        height: auto;
+        font-size: unset;
+        .col-4 {
+            button {height: 50px;}
+            i {font-size: x-large;}
+        }
+    }
+   }
+
+  /* Applies New Setting, Styles and Positions to Windows that are at 375 Resolution */ 
+  @media screen and (max-width: 375px) {
+      .h-container{img{margin: 0.6em auto;}}
+       input {width: 356px;} /* Changes width of Text Field */
+       .btn-search {margin-left: 82%;}
+       .banner-container {
+           .content-container2 { /* Changes width of Button */
+               button {width: 48%;}
+           }
+       }
+       /* Changes width of Button */
+       .footer-container {.col-4 {button {i {font-size: x-large;} width: 9.0625em;}}}
+   }
+
+  /* Applies New Setting, Styles and Positions to Windows that are at 320 Resolution */ 
+  @media screen and (max-width: 320px) {
+       input {width: 19em;} /* Changes width of Text Field */
+       header img { /* Repositions Logo in Header */
+        padding-left: 10px;
+    }
+       .r-container .btn-menu { /* Applies changes */
+            width: 19%;
+        }
+        .row2 {.sb-container {max-width: 70%;}} /* Changes width of Container */
+        .banner-container {.content-container2 {button {width: 58%;}}} /* Changes width of Button */
+        .footer-container {.col-4 {button {width: 7.7025em}}}  /* Changes width of Button */
+   }

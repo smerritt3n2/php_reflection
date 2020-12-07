@@ -1,0 +1,35 @@
+/*=============================================================================*/
+  /* Sub-Client Area
+  /*=============================================================================*/
+
+  .google { /* Applies Images to Container background */
+    width: 220px;height: 70px;
+    background: url(../img/clients/google_original.png) no-repeat;
+  }
+
+  .smp {
+    width: 115px;height: 70px;
+    background: url(../img/clients/smp_original.png) no-repeat;
+  }
+
+  .future50 {
+    width: 44px;height:70px;
+    background: url(../img/clients/future50_original.png) no-repeat;
+  }
+
+  .qms {
+    width: 60px;height:70px;
+    background: url(../img/clients/qms_original.png) no-repeat;
+  }
+
+  .carbon {
+    width: 175px;height:70px;
+    background: url(../img/clients/carbon_original.png) no-repeat;
+  }
+
+  /* Hover Event: Changes Background Image to New Image */
+ .future50:hover {background: url("../img/clients/future50_new.png") no-repeat;}
+ .qms:hover {background: url("../img/clients/qms_new.png") no-repeat;}
+ .carbon:hover {background: url("../img/clients/carbon_new.png") no-repeat;}
+  /*=============================================================================*/
+  /*=============================================================================*/

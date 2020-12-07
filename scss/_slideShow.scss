@@ -1,0 +1,73 @@
+  /*=============================================================================*/
+  /* Slideshow Area
+  /*=============================================================================*/
+
+.content-container { /* Holds together all Content Elements in a Column */
+    margin: 0 0 0 7em;
+    align-self: center;  
+    font-size: x-large;
+    z-index: 2;
+    position: absolute;
+    bottom: 10em;
+    button { /* Creates a Style to Button */
+        width: 200px; 
+        height: 50px;
+        font-size: 15px;
+        margin-top: 25px;
+        code {
+            color:#926fb1;
+        }
+    }
+    i {margin-left: 18px;}
+    h1, p {margin: 10px 0px;}
+}
+
+.jd-slider .prev, .jd-slider .next {
+    display: none;
+}
+
+.jd-slider .auto {
+    display: none !important; /* Puts this style as the highest Priority */
+}
+
+.jd-slider .controller .indicate-area {
+    z-index: 10;
+    position: absolute;
+    bottom: 1em;
+    left: 54em;
+    a.on:after {background-color: #fff !important;}
+    a:after {border: 2px solid #fff !important;}
+}
+
+.wb-btn {
+    background-color: var(--purple-color); background-color: #926fb1;
+    &:hover{background-color:var(--purple-hover);background-color:#79539a;}
+}
+
+.is-btn {
+    background-color: var(--purple-color); background-color: #427fd3;
+    &:hover{background-color:var(--purple-hover);background-color:#286abd;}
+}
+
+.ts-btn {
+    background-color: var(--purple-color); background-color: #DF4A45;
+    &:hover{background-color:var(--purple-hover);background-color:#de093f;}
+}
+
+.bs-btn {
+    background-color: var(--purple-color); background-color: #667F9D;
+    &:hover{background-color:var(--purple-hover);background-color:#526781;}
+}
+
+.dm-btn {
+    background-color: var(--purple-color); background-color: #00CD76;
+    &:hover{background-color:var(--purple-hover);background-color:#25a25a;}
+}
+
+.cs-btn {
+    background-color: var(--purple-color); background-color: #FF2E5B;
+    &:hover{background-color:var(--purple-hover);background-color:#de093f;}
+}
+
+  /*=============================================================================*/
+  /*=============================================================================*/
